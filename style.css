@@ -3,15 +3,20 @@ body {
   font-family: "SoDo Sans SemiBold ", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.navbar-container {
+  box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
+  -webkit-box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
+  -moz-box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
+}
+
 .navbar {
+  max-width: 1560px;
   padding: 20px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
-  -webkit-box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
-  -moz-box-shadow: -1px 3px 5px -1px rgba(79, 64, 64, 0.38);
+  margin: auto;
 }
 
 .navbar-left svg {
@@ -67,8 +72,15 @@ body {
   background-color: rgba(0, 0, 0, 0.06);
 }
 
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .product img {
   max-width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .product {
@@ -78,6 +90,17 @@ body {
 .product-left,
 .product-right {
   max-width: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  align-content: stretch;
+  flex-direction: column;
+}
+
+.product-right {
+  padding: 32px 24px 32px 24px;
 }
 
 .product-title {
@@ -86,10 +109,15 @@ body {
   color: white;
 }
 
+.product-container {
+  margin: 40px 0px 40px 0px;
+  display: flex;
+}
 .product-description {
-  width: 100%;
   text-align: center;
   color: white;
+  font-size: 24px;
+  padding: 30px 60px 30px 60px;
 }
 
 .product-button {
@@ -97,4 +125,32 @@ body {
   max-width: max-content;
   border-radius: 40px;
   padding: 7px 16px 7px 16px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.product-button-white {
+  color: white;
+}
+
+.product-button-white:hover {
+  background-color: hsla(0, 0%, 100%, 0.12);
+}
+
+.product-button-black {
+  color: black;
+  border-color: black;
+}
+
+.product-button-black:hover {
+  background-color: rgba(30, 57, 50, 0.1);
+}
+
+.footer {
+  font-size: 14px;
+  padding: 50px;
+  text-align: center;
+  max-width: 1440px;
+  margin: auto;
 }
