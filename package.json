@@ -1,10 +1,16 @@
 {
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   },
   "homepage": "https://swywssaid.github.io/starbucks-ui-clone/",
   "scripts": {
+    "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
