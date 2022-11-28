@@ -2,7 +2,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://swywssaid/github.io/starbucks-ui-clone",
+  "homepage": "https://swywssaid.github.io/starbucks-ui-clone",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
